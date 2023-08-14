@@ -1,0 +1,36 @@
+@import url("./globalStyles.css");
+
+.title1 {
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size-175);
+    line-height: var(--line-height-25);
+}
+
+.title2 {
+    font-weight: var(--font-weight-600);
+    font-size: var(--font-size-125);
+    line-height: var(--line-height-15);
+}
+
+.text1 {
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-1);
+    line-height: var(--line-height-175);
+}
+
+.text2 {
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-875);
+    line-height: var(--line-height-1);
+}
+
+.text3 {
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-75);
+    line-height: var(--line-height-1);
+}
+
+.text2--bold {
+    font-weight: var(--font-weight-600);
+    font-size: var(--textsize2);
+}

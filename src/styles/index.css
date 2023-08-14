@@ -1,0 +1,258 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+main {
+    width: 90%;
+    margin-top: 10%;
+
+}
+
+.container__header {
+    background-color: var(--grey-1);
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+
+}
+
+.header__paragrafo {
+    color: var(--whiteFixed);
+
+}
+
+.imagens__perfil {
+    height: 3.125rem;
+}
+
+.usar__area {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.lista__De__Sugestoes {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: start;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.reparticao3 {
+    width: 50%;
+}
+
+.reparticao4 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sugestao {
+    display: flex;
+    height: fit-content;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.conteudo_da_sugestao {
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+}
+
+.sugestao_botao {
+    align-self: flex-start;
+    margin-left: 64px;
+    background-color: transparent;
+    color: var(--grey-1);
+    border: 2px solid var(--grey-1);
+    padding: 8px;
+    border-radius: 4px;
+
+
+}
+
+.sugestao_botao:hover {
+    background-color: var(--brand-1);
+    border-color: var(--brand-1);
+    color: var(--whiteFixed);
+}
+
+.conteudo_do_post {
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    white-space: nowrap;
+}
+
+.post_botoes {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.container__posts {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.abrir_posts {
+    padding: 8px;
+    background-color: var(--grey-0);
+    color: var(--whiteFixed);
+    border-radius: 4px;
+}
+
+.title1 {
+    flex-direction: column;
+    gap: 60px;
+    align-items: start;
+    padding-top: 20px;
+}
+
+.text1 {
+    flex-direction: column;
+    gap: 60px;
+    align-items: start;
+    padding-top: 20px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form>button {
+    width: fit-content;
+    align-self: flex-end;
+    background-color: var(--grey-4);
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.form>button:hover {
+    background-color: var(--brand-1);
+    color: var(--whiteFixed);
+}
+
+input,
+textarea {
+    border: 2px solid var(--grey-4);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.botoes_like {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid var(--brand-1);
+}
+
+@media(max-width:1024px) {
+    .usar__area {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .lista__De__Sugestoes {
+        flex-direction: row;
+        width: 100%;
+        overflow-x: scroll;
+
+    }
+
+    .sugestao {
+        flex-direction: column;
+        height: 140px;
+        justify-content: flex-start;
+
+
+    }
+
+    .reparticao3 {
+        width: 100%;
+    }
+
+    .h2__conteudo {
+        white-space: nowrap;
+
+    }
+
+    .sugestao_botao {
+        margin-left: 0px;
+    }
+
+}
+
+h1,
+button,
+div,
+p {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+dialog {
+    box-sizing: border-box;
+
+    width: 90%;
+    border: none;
+    border-radius: 1%;
+}
+
+.modal__container {
+
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#close__modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+#modalController::backdrop{
+    background-color: rgba(0,0,0,0.8)
+}
